@@ -1,21 +1,22 @@
+/* Geral */
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing:border-box;
     font-family: Verdana;
     color: #333;
   }
   
   body {
     background-image: url("./bg.jpg");
-    background-position: center;
+    background-position: initial;
     background-size: cover;
   }
   
   button {
     background-color: #fdfdfd;
-    color:(243, 168, 27);
-    border: 2px solid rgb(153, 92, 22);
+    color: rgb(73, 14, 14);
+    border: 2px solid rgb(122, 18, 18);
     padding: 0.3rem 0.6rem;
     font-size: 1rem;
     cursor: pointer;
@@ -26,7 +27,7 @@
   }
   
   button:hover {
-    background-color:rgb(153, 92, 22);;
+    background-color:rgb(122, 18, 18);
   }
   
   button:hover > i {
@@ -35,7 +36,7 @@
   
   button i {
     pointer-events: none;
-    color: #573d09;
+    color: #000;
     font-weight: bold;
   }
   
@@ -89,6 +90,7 @@
     color: #444;
   }
   
+  /* Todo Toolbar */
   #toolbar {
     padding: 1rem;
     border-bottom: 1px solid #ccc;
@@ -126,6 +128,8 @@
   #filter select {
     flex: 1;
   }
+  
+  /* Todo List */
   .todo {
     display: flex;
     justify-content: space-around;
@@ -145,7 +149,7 @@
   }
   
   .done {
-    background: rgb(27, 16, 4);
+    background: rgb(122, 18, 18);
   }
   
   .done h3 {
